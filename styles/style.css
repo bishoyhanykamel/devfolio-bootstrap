@@ -1,0 +1,108 @@
+/* Header style */
+header {
+    background-image: url("./../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header .content .hero-header {
+    font-size: 4.5rem;
+}
+
+header .content .hero-frames::after {
+    content: "";
+    animation-name: hero-subtitle-freelancer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hero-subtitle-freelancer {
+    0% {
+        content: "|";
+    }
+
+    4% {
+        content: "F |";
+    }
+
+    8% {
+        content: "Fr |";
+    }
+
+    12% {
+        content: "Fre |";
+    }
+
+    16% {
+        content: "Free |";
+    }
+
+    20% {
+        content: "Freel |";
+    }
+
+    24% {
+        content: "Freela |";
+    }
+
+    28% {
+        content: "Freelan |";
+    }
+
+    32% {
+        content: "Freelanc |";
+    }
+
+    36% {
+        content: "Freelance |";
+    }
+
+    40% {
+        content: "Freelancer |";
+    }
+
+    60% {
+        content: "Freelancer |";
+    }
+
+    64% {
+        content: "Freelance |";
+    }
+
+    68% {
+        content: "Freelanc |";
+    }
+
+    72% {
+        content: "Freelan |";
+    }
+
+    76% {
+        content: "Freela |";
+    }
+
+    80% {
+        content: "Freel |";
+    }
+
+    84% {
+        content: "Free |";
+    }
+
+    88% {
+        content: "Fre |";
+    }
+
+    92% {
+        content: "Fr |";
+    }
+
+    96% {
+        content: "F|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
