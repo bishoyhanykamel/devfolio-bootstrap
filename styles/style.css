@@ -3,11 +3,49 @@
     --blue-color: #0078ff;
     --title-grey-color: #1e1e1e;
     --body-bg-grey: #F5F5F5;
+    --light-blue-color: #cde1f8;
 }
 
 body {
     background-color: var(--body-bg-grey);
 }
+
+.section-title {
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-subtitle::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: var(--blue-color);
+    bottom: 0;
+    right: 50%;
+    width: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.icon i {
+    color: black;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: var(--blue-color) 10px solid;
+    font-size: 40px;
+    transition: color 0.5s, border-color 0.5s, background-color 0.5s;
+}
+
 
 /* ================ [Navbar Style] ================ */
 nav .navbar-brand {
@@ -214,8 +252,8 @@ header .content .hero-frames::after {
 /* ================ [About Style] ================ */
 #about {
     --main-text-color: #4e4e4e;
-    --progress-bar-bg: #cde1f8;
 }
+
 .about {
     color: var(--main-text-color);
 }
@@ -227,20 +265,31 @@ header .content .hero-frames::after {
 }
 
 .about .progress {
-    background-color: var(--progress-bar-bg);
+    background-color: var(--light-blue-color);
     height: 12px;
 }
 
-.about .section-title {
+.about .about-title {
     position: relative;
 }
 
-.about .section-title::after {
+.about .about-title::after {
     content: "";
     position: absolute;
     bottom: -10px;
     left: 0;
     width: 100px;
     height: 3px;
+    background-color: var(--blue-color);
+}
+
+/* ================ [Services Style] ================ */
+.services {
+    text-align: center;
+}
+
+.services .inner:hover .icon i {
+    color: white;
+    border-color: var(--light-blue-color);
     background-color: var(--blue-color);
 }
