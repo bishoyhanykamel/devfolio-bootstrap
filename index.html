@@ -11,16 +11,78 @@
 </head>
 
 <body>
-    <header class="vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-100 position-fixed fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 text-light fw-medium" href="#home">DevFolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+                            Drop down <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu position-absolute d-block">
+                            <li><a class="dropdown-item" href="#">Drop down 1</a></li>
+                            <li>
+                                <div class="dropend position-relative">
+                                    <div class="dropdown-item d-flex justify-content-between align-items-center">
+                                        <p class="p-0 m-0">Deep drop down</p>
+                                        <p class="p-0 m-0"><i class="fa-solid fa-chevron-right"></i></p>
+                                    </div>
+                                    <ul class="dropdown-menu d-block position-absolute top-0">
+                                        <a href="#" class="dropdown-item">Deep Drop 1</a>
+                                        <a href="#" class="dropdown-item">Deep Drop 2</a>
+                                        <a href="#" class="dropdown-item">Deep Drop 3</a>
+                                        <a href="#" class="dropdown-item">Deep Drop 4</a>
+                                        <a href="#" class="dropdown-item">Deep Drop 5</a>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Drop down 2</a></li>
+                            <li><a href="#" class="dropdown-item">Drop down 3</a></li>
+                            <li><a href="#" class="dropdown-item">Drop down 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="vh-100">
         <div class="bg-black bg-opacity-50 h-100 d-flex justify-content-center align-items-center">
             <div class="container text-center">
                 <div class="content text-white">
-                    <h1 class="hero-header mb-3">I am Morgan Freeman</h1>
+                    <h1 class="hero-header mb-2">I am Morgan Freeman</h1>
                     <p class="hero-frames fs-1 fw-medium"></p>
                 </div>
             </div>
         </div>
     </header>
+    <div class="vh-100 bg-info">
+
+    </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 

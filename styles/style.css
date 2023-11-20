@@ -1,4 +1,103 @@
-/* Header style */
+/* ================ [General Style] ================ */
+:root {
+    --blue-color: #0078ff;
+}
+
+
+/* ================ [Navbar Style] ================ */
+nav .navbar-brand {
+    letter-spacing: 1px;
+}
+
+nav .nav-item .nav-link,
+.navbar-nav .nav-link.active {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding: 1rem 0;
+    padding-left: 2rem;
+}
+
+nav .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 100%;
+    transition: right 0.5s;
+    background-color: white;
+    height: 2px;
+}
+
+.navbar-nav .nav-link.active::after {
+    right: 20%;
+}
+
+nav .nav-item:hover .nav-link::after {
+    right: 20%;
+}
+
+.navbar-nav .nav-link.show {
+    color: white;
+}
+
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+    color: var(--blue-color);
+
+}
+
+.dropdown-menu .dropdown-item {
+    color: #4e4e4e;
+    font-weight: 600;
+}
+
+.dropdown>.dropdown-menu {
+    top: 150%;
+    opacity: 0;
+    transition: opacity 0.5s, top 0.5s;
+}
+
+.dropdown:hover>.dropdown-menu {
+    opacity: 1;
+    top: 100%;
+}
+
+.dropend .dropdown-menu {
+    left: 80%;
+    opacity: 0;
+    transition: left 0.5s, opacity 0.5s;
+}
+
+.dropend:hover>.dropdown-menu {
+    opacity: 1;
+    left: 100%;
+}
+
+.dropdown-item {
+    min-width: 200px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.dropend .dropdown-item {
+    cursor: pointer;
+}
+
+/* ================ [Header Style] ================ */
 header {
     background-image: url("./../images/hero-bg.jpg");
     background-size: cover;
