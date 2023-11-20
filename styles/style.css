@@ -1,8 +1,13 @@
 /* ================ [General Style] ================ */
 :root {
     --blue-color: #0078ff;
+    --title-grey-color: #1e1e1e;
+    --body-bg-grey: #F5F5F5;
 }
 
+body {
+    background-color: var(--body-bg-grey);
+}
 
 /* ================ [Navbar Style] ================ */
 nav .navbar-brand {
@@ -204,4 +209,38 @@ header .content .hero-frames::after {
     100% {
         content: "|";
     }
+}
+
+/* ================ [About Style] ================ */
+#about {
+    --main-text-color: #4e4e4e;
+    --progress-bar-bg: #cde1f8;
+}
+.about {
+    color: var(--main-text-color);
+}
+
+.text-title {
+    font-size: 1.1rem;
+    color: var(--title-grey-color);
+    font-weight: 600;
+}
+
+.about .progress {
+    background-color: var(--progress-bar-bg);
+    height: 12px;
+}
+
+.about .section-title {
+    position: relative;
+}
+
+.about .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: var(--blue-color);
 }
