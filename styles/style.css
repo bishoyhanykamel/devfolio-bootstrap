@@ -111,23 +111,27 @@ nav .nav-item:hover .nav-link::after {
 .dropdown>.dropdown-menu {
     top: 150%;
     opacity: 0;
+    visibility: hidden;
     transition: opacity 0.5s, top 0.5s;
 }
 
 .dropdown:hover>.dropdown-menu {
     opacity: 1;
     top: 100%;
+    visibility: visible;
 }
 
 .dropend .dropdown-menu {
     left: 80%;
     opacity: 0;
+    visibility: hidden;
     transition: left 0.5s, opacity 0.5s;
 }
 
 .dropend:hover>.dropdown-menu {
     opacity: 1;
     left: 100%;
+    visibility: visible;
 }
 
 .dropdown-item {
@@ -292,4 +296,24 @@ header .content .hero-frames::after {
     color: white;
     border-color: var(--light-blue-color);
     background-color: var(--blue-color);
+}
+
+
+/* ================ [Counter Style] ================ */
+.counter {
+    background-image: url("./../images/counters-bg.jpg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+
+.overlay-blue {
+    background: var(--blue-color);
+}
+.counter .icon i {
+    width: 50px;
+    height: 50px;
+    border-color: var(--light-blue-color);
+    display: block;
 }
