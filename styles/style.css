@@ -383,3 +383,28 @@ header .content .hero-frames::after {
     height: 10px;
     border-radius: 50%;
 }
+
+/* ================ [Blog Style] ================ */
+
+.blog .card-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.blog .card-title {
+    transition: color 1s;
+}
+
+.blog .card-title:hover {
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+.blog .card-footer a {
+    transition: color 1s;
+}
+
+.blog .card-footer a:hover {
+    color: var(--blue-color);
+}
