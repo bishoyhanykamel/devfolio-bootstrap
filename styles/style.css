@@ -15,6 +15,27 @@ body {
     color: var(--blue-color);
 }
 
+.btn-primary-custom {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--blue-color);
+    --bs-btn-border-color: var(--blue-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #3393ff;
+    --bs-btn-hover-border-color: var(--light-blue-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--light-blue-color);
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--blue-color);
+    --bs-btn-disabled-border-color: var(--blue-color);
+}
+
+.btn-primary-custom:hover {
+    box-shadow: 0 0 0 4px var(--light-blue-color);
+}
+
 .section-title {
     font-weight: bold;
     font-size: 3rem;
@@ -278,11 +299,11 @@ header .content .hero-frames::after {
     height: 12px;
 }
 
-.about .about-title {
+.about-title {
     position: relative;
 }
 
-.about .about-title::after {
+.about-title::after {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -407,4 +428,35 @@ header .content .hero-frames::after {
 
 .blog .card-footer a:hover {
     color: var(--blue-color);
+}
+
+
+/* ================ [Contact Style] ================ */
+.contact {
+    background-image: url("./../images/overlay-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact .contact-icons .icon-sm {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.7s, border-color 0.7s, color 0.7s;
+}
+
+.contact .contact-icons .icon-sm i {
+    font-size: 20px;
+}
+
+
+.contact .contact-icons .icon-sm:hover {
+    background-color: var(--blue-color);
+    border-color: var(--light-blue-color);
+    color: white;
 }
