@@ -1,4 +1,4 @@
-# devfolio-bootstrap
+# DevFolio Assignment
 DevFolio Bootstrap Template - Route Cycle 42 Front End assignment
 A landing page made for the purposes of applying Bootstrap components, tips, and tricks.
 
