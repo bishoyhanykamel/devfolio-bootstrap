@@ -316,6 +316,7 @@ header .content .hero-frames::after {
 .overlay-blue {
     background-color: rgba(0, 119, 255, 0.65);
 }
+
 .counter .icon i {
     width: 75px;
     height: 75px;
@@ -352,4 +353,33 @@ header .content .hero-frames::after {
 
 .portfolio .modal-dialog {
     min-width: calc(200px + 30vw);
+}
+
+/* ================ [Dev-Sliders Style] ================ */
+.dev-sliders {
+    background-image: url("./../images/overlay-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.dev-sliders .carousel {
+    padding: 7rem 0;
+}
+
+.dev-sliders .dev-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.dev-sliders .developer-text p {
+    max-width: 900px;
+}
+
+.dev-sliders .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
